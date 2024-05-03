@@ -35,7 +35,7 @@ has to be attached to the localhost address.
 The ports work as such: 'your assigned port':'Docker port' so you change the first port to an unassigned port for your system. In the example below the computer port is
 changed to 6875. Making the ports section look like: - 6875:80
 
-The APP_URL for mac should look like this: 'https://localhost:6875'
+The APP_URL for mac should look like this: '--https://localhost:6875--'
 
 To start create and navigate to your application folder directory and create your compose file. It is a yaml file so 'compose.yml' is what Docker will look for.
 
