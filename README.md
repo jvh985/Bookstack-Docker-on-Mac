@@ -20,6 +20,7 @@ I followed the instructions from [Bookstack's site](https://www.bookstackapp.com
 
 I initially tried to install manually but kept running into issues. So I went with the compose file route. Scroll down to the header: **Docker Containers**
 
+The top repository is from LinuxServer.io. They have a fantastic explaination.
 Here there is a link to [LinuxServer.io repository](https://github.com/linuxserver/docker-bookstack)
 
 Read through the README file and you'll come accross a compose file. The file itself it a bit outdated and video tutorials don't account for this either.
@@ -35,7 +36,7 @@ has to be attached to the localhost address.
 The ports work as such: 'your assigned port':'Docker port' so you change the first port to an unassigned port for your system. In the example below the computer port is
 changed to 6875. Making the ports section look like: - 6875:80
 
-The APP_URL for mac should look like this: '--https://localhost:6875--'
+The APP_URL for mac should look like this: 'https :// localhost:6875'
 
 To start create and navigate to your application folder directory and create your compose file. It is a yaml file so 'compose.yml' is what Docker will look for.
 
@@ -77,3 +78,20 @@ services:
       - ./bookstack_db_data:/config
     restart: unless-stopped
 ```
+
+Now, if you are brand new to Docker, then a lot of this will seem confusing. But take the time to look through this file and get a feel for why things are the
+way they are and the indention importance.
+
+This file shows that there are 2 services that will be started inside your Docker container: Bookstack itself, and a database for Bookstack. The PUID and PGID
+can be left alone completely if you are just spinning up a local instance of this application, however they need to be changed in accordance to different 
+companies user group id's if used in a workplace setting.
+
+The usernames and passwords should be changed to be something much more secure that what is shown, just make sure that they are correct. There is some
+overlap in the naming between the services. 
+
+The volumes are where the information is stored inside your application directory and if you aren't too familiar with terminal syntax ./ means the path to
+the current directory you are within, inside the command line/terminal. So there is no need to type out the full path of your folder. Everything after the 
+/ is creating new folders for the data of each service and the :/config is storing the configuration in those new folders for each service.
+
+## Actually using the compose file
+Now you will need to actually use the compose file.
