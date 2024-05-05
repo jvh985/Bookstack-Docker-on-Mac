@@ -102,7 +102,8 @@ The command to read the yml file, start a container and run the contents of the 
 
 There are a few options to add to the docker command in terminal to make things easier for yourself:
 
-> -p <your custom container name>
+> -p **your custom container name**
+
 > -d
 
 The -p option allows you to create a custom name for your container instead of a random string.
