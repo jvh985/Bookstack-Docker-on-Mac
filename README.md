@@ -95,3 +95,24 @@ the current directory you are within, inside the command line/terminal. So there
 
 ## Actually using the compose file
 Now you will need to actually use the compose file.
+
+The command to read the yml file, start a container and run the contents of the file are:
+
+> docker compose up
+
+There are a few options to add to the docker command in terminal to make things easier for yourself:
+
+> -p <your custom container name>
+> -d
+
+The -p option allows you to create a custom name for your container instead of a random string.
+
+The -d option runs everything in the background instead of locking that terminal window to the running container, which allows you to
+continue using your terminal window for checking your containers and viewing logs.
+
+The full command would look something like:
+
+> docker compose -p test_container up -d
+
+
+
