@@ -2,7 +2,9 @@
 How to setup a running Bookstack instance in a Docker container on MacOS using a compose file
 
 ## Why make this?
-I ran into a few issues learning Docker and it wasn't as straightforward on Mac as it was for other implementations.
+I ran into a few issues learning Docker and it wasn't as straightforward on Mac as it was for other implementations. This could have
+been my inexperience and/or certain updates caused depreciation of processes that weren't explained in various tutorials. As of May, 2024
+this should be an up-to-date guide to make setting up Bookstack very painless.
 
 Also, updates to Docker caused video tutorials to be of little help in this process. This is to help anyone that finds this guide as it 
 explains why certain things will be done the way they are instead of just blindly following along.
