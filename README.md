@@ -149,8 +149,7 @@ log.
 
 ---
 
-# Hopefully this helps anyone who stumbles across it. Again, please refer to the main bookstackapp website and linuxserver.io for extra
-# documentation and support. They've done all of the hard work.
+# Hopefully this helps anyone who stumbles across it. Again, please refer to the main bookstackapp website and linuxserver.io for extra documentation and support. They've done all of the hard work.
 
 
 
