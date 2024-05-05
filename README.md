@@ -115,5 +115,36 @@ The full command would look something like:
 
 > docker compose -p test_container up -d
 
+**__NOTE__**: You may receive an error: "error getting credentials - err docker-credential-desktop"
+
+This is common and you need to edit the docker config.json file. A simple fix, just open the file in an editor:
+
+> sudo nano ~/.docker/config.json
+
+Inside you will see a line containing credsStore. Just change it to credStore and save. Everything will work fine afterwards.
+
+To see what containers you have running just use:
+
+> docker ps
+
+This will show you **__running__** containers. If you want to see every container created use:
+
+> docker ps -a
+
+## Very useful tip for new users
+
+Get used to looking at the logs of everything, it will give you really useful information and lead you to fix issues on your own
+without the need to search the web and find all sorts of potential solutions that may or may not work.
+
+Use the command:
+
+docker logs *container name*
+
+Depending on what you are running in your container or if it's endlessly restarting you may need to ctrl+c a few times to exit the 
+log.
+
+Hopefully this helps anyone who stumbles across it. Again, please refer to the main bookstackapp website and linuxserver.io for extra
+documentation and support. They've done all of the hard work.
+
 
 
