@@ -127,6 +127,8 @@ This is common and you need to edit the docker config.json file. A simple fix, j
 
 Inside you will see a line containing credsStore. Just change it to credStore and save. Everything will work fine afterwards.
 
+Credit to this fix goes to Deepak Bhavsar on: <Stackoverflow>[https://stackoverflow.com/questions/65896681/exec-docker-credential-desktop-exe-executable-file-not-found-in-path]
+
 To see what containers you have running just use:
 
 > docker ps
