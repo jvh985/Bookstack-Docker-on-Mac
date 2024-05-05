@@ -102,7 +102,7 @@ The command to read the yml file, start a container and run the contents of the 
 
 There are a few options to add to the docker command in terminal to make things easier for yourself:
 
-> -p **your custom container name**
+> -p <*your custom container name*>
 
 > -d
 
@@ -138,7 +138,7 @@ without the need to search the web and find all sorts of potential solutions tha
 
 Use the command:
 
-> docker logs *container name*
+> docker logs <*container-name*>
 
 Depending on what you are running in your container or if it's endlessly restarting you may need to ctrl+c a few times to exit the 
 log.
