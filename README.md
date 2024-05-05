@@ -3,7 +3,7 @@ How to setup a running Bookstack instance in a Docker container on MacOS using a
 
 ## Why make this?
 I ran into a few issues learning Docker and it wasn't as straightforward on Mac as it was for other implementations. This could have
-been my inexperience and/or certain updates caused depreciation of processes. As of May, 2024 this should be an up-to-date guide to make 
+been my inexperience and/or certain updates caused depreciation of processes. As of May 2024, this should be an up-to-date guide to make 
 setting up Bookstack very painless.
 
 Updates to Docker caused video tutorials to be of little help in this process. This is to help anyone that finds this guide as it 
