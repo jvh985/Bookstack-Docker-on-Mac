@@ -93,6 +93,8 @@ The volumes are where the information is stored inside your application director
 the current directory you are within, inside the command line/terminal. So there is no need to type out the full path of your folder. Everything after the 
 / is creating new folders for the data of each service and the :/config is storing the configuration in those new folders for each service.
 
+---
+
 ## Actually using the compose file
 Now you will need to actually use the compose file.
 
@@ -131,6 +133,8 @@ This will show you **__running__** containers. If you want to see every containe
 
 > docker ps -a
 
+---
+
 ## Very useful tip for new users
 
 Get used to looking at the logs of everything, it will give you really useful information and lead you to fix issues on your own
@@ -143,7 +147,9 @@ Use the command:
 Depending on what you are running in your container or if it's endlessly restarting you may need to ctrl+c a few times to exit the 
 log.
 
-Hopefully this helps anyone who stumbles across it. Again, please refer to the main bookstackapp website and linuxserver.io for extra
+---
+
+# Hopefully this helps anyone who stumbles across it. Again, please refer to the main bookstackapp website and linuxserver.io for extra
 documentation and support. They've done all of the hard work.
 
 
